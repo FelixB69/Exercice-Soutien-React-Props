@@ -1,25 +1,15 @@
-import logo from './logo.svg';
+import Cube from './Cube';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App = () => {
+  return (<div className='containerApp'>
+    < Cube name={'Item A'} color={'blue'} width={'150px'} height={'150px'} />
+    < Cube name={'Item B'} color={'red'} width={'150px'} height={'150px'} rounded={true} />
+    < Cube name={'Item C'} color={'green'} width={'100px'} height={'100px'} />
+    < Cube name={'Item D'} color={'yellow'} width={'200px'} height={'200px'} rounded={true} />
+  </div>
+  )
 }
 
 export default App;
